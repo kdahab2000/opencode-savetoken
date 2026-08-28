@@ -76,6 +76,12 @@ sh tools/smoke.sh
 - [docs/release.md](docs/release.md) — how to publish this repo later.
 - [SECURITY.md](SECURITY.md) — threat model and reporting.
 
+## Support the project
+
+If this project helps you run coding models locally or reduce hosted-AI costs, you can support maintenance through [GitHub Sponsors](https://github.com/sponsors/kdahab2000). Sponsorship funds compatibility testing, MLX model support, security maintenance, and documentation. See [the sponsorship brief](docs/sponsorship.md) for the project mission, screenshots, and sponsorship tiers.
+
+![SaveToken local inference](docs/assets/savetoken-local-inference.png)
+
 ## Tests
 
 ```sh
