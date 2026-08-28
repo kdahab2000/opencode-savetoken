@@ -1,0 +1,14 @@
+# Third-party notices
+
+- OpenCode (https://opencode.ai): external application and CLI. Used as
+  the sole coding UI. No source copied.
+- SaveToken (local checkout, ../SaveToken): the MLX inference engine and
+  canonical tooling. tools/generate_config.py, tools/import_check.py and
+  tools/smoke.sh are adapted excerpts (2026-08-28) with provenance
+  headers; keep them in sync deliberately.
+- SaveToken-GemmaMLX (../SaveToken-GemmaMLX): the Gemma model kit; its
+  parser/filter tests are mirrored in tests/test_tool_protocol.py.
+- Models referenced (never included): Qwen3-Coder-30B-A3B-Instruct and
+  Gemma 4 E2B (Apache-2.0 upstreams), served as standalone MLX
+  checkpoints by SaveToken; Ollama runtime packages remain in Ollama's
+  private store.

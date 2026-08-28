@@ -1,0 +1,41 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "comment": "Example project-level .opencode.json. Prefer tools/generate_config.py which generates this from your live local backends, preserves existing settings, and writes with a backup.",
+  "provider": {
+    "savetoken": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "SaveToken MLX (local)",
+      "options": {"baseURL": "http://127.0.0.1:8321/v1", "apiKey": "local"},
+      "models": {
+        "qwen3-coder-30b-a3b-4bit": {
+          "name": "qwen3-coder-30b-a3b-4bit — SaveToken MLX local",
+          "tool_call": true,
+          "reasoning": false,
+          "attachment": false,
+          "limit": {"context": 65536, "output": 16384}
+        },
+        "gemma4-e2b-mlx": {
+          "name": "gemma4-e2b-mlx — SaveToken MLX local",
+          "tool_call": true,
+          "reasoning": false,
+          "attachment": false,
+          "limit": {"context": 65536, "output": 8192}
+        }
+      }
+    },
+    "ollama": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Ollama (local)",
+      "options": {"baseURL": "http://127.0.0.1:11434/v1", "apiKey": "local"},
+      "models": {
+        "gemma4:e2b-mlx": {
+          "name": "Gemma 4 E2B MLX — local",
+          "tool_call": false,
+          "reasoning": false,
+          "attachment": false,
+          "limit": {"context": 32768, "output": 8192}
+        }
+      }
+    }
+  }
+}
